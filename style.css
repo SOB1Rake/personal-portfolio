@@ -8,6 +8,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     background: #030712;
+    color: #F9FAFB;
 }
 :root{
     --text: #D1D5DB;
@@ -35,36 +36,39 @@ ul{
     align-items: center;
     margin-top: 16px;
 
-    .logo a{
-        color: var(--logo);
-        font-weight: 700;
-        font-size: 30px;
+}
+.logo a{
+    color: var(--logo);
+    font-weight: 700;
+    font-size: 30px;
+}
+.nav_lists{
+    display: flex;
+    align-items: center;
+    gap: 48px;
+}
+.nav_list{
+    display: flex;
+    gap: 24px;
+    a{
+        font-weight: 500;
+        font-size: 16px;
+        color: var(--text);
     }
-    .nav_lists{
-        display: flex;
-        align-items: center;
-        gap: 48px;
-            .nav_list{
-                display: flex;
-                gap: 24px;
-                a{
-                    font-weight: 500;
-                    font-size: 16px;
-                    color: var(--text);
-                }
-            }
-            .other{
-                border-left: 1px solid #1F2937;
-                display: flex;
-                align-items: center;
-                gap: 16px;
-                padding-left: 24px;
+}
+.menu_icon{
+    display: none;
+}
+.other{
+    border-left: 1px solid #1F2937;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding-left: 24px;
 
-                i{
-                    color: var(--text);
-                    font-weight: 900;
-                }
-            }
+    i{
+        color: var(--text);
+        font-weight: 900;
     }
 }
 
@@ -76,4 +80,52 @@ ul{
     border-radius: 12px;
     background: var(--logo);
     border: none;
+}
+
+.header_left{
+
+    h1{
+        font-size: 60px;
+        font-weight: 700;
+        color: var(--logo);
+        margin-bottom: 8px;
+    }
+
+    p{
+        font-size: 16px;
+        font-weight: 400;
+        color: var(--text);
+        max-width: 768px;
+        width: 100%;
+        margin-bottom: 48px;
+    }
+
+    .text{
+        p{
+            margin-bottom: 8px;
+        }
+    }
+
+    .logo_icons i{
+        color: var(--text);
+        font-size: 24px;
+        margin-left: 6px;
+        margin-top: 48px;
+    }
+}
+
+.header_right img{
+    max-width: 300px;
+}
+
+.header_img img{
+    display: none;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 96px;
+    padding-bottom: 96px;
 }
